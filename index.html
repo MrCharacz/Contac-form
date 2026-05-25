@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="StyleSheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+
+
+ <div id="flex-full-view-port">
+
+    <form id="contact-form">
+
+    <div class="flex-center">
+      <div id="success-message">
+        <div class="flex-start" id="success-message-flex"><img src="./assets/images/icon-success-check.svg" class="icon" id="icon-success">
+        <h1>Message sent!</h1></div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </div>
+
+      <h1>Contact Us</h1>
+      <div class="flex" id="flex-names">
+        <div class="lni-container" id="last-name">
+          <label>First Name<span id="star">*</span></label>
+          <input type="text" required id="first-name-input" data-error="This field is required" name="first-name">
+        </div>
+
+        <div class="lni-container" id="first-name">
+          <label>Last Name<span id="star">*</span></label>
+          <input type="text" required id="last-name-input" data-error="This field is required" name="last-name">
+        </div>
+    </div>
+
+        <div class="lni-container">
+          <label>Email Address<span id="star">*</span></label>
+          <input type="text" required id="email-input" data-error="Please enter a valid email address" name="email">
+        </div>
+      <div class="lni-container">
+        <label id="quary-type-label">Query Type<span id="star">*</span></label>
+        <div class="flex" id="flex-query">
+          <div class="radio-input"><input type="radio" value="General Enquiry" name="query-type" required data-error="Please select a query type"><label>General Enquiry</label></div>
+          <div class="radio-input"><input type="radio" value="Support Request" name="query-type" required data-error="Please select a query type"><label>Support Request</label></div>
+        </div>
+      </div>
+
+      <div class="lni-container">
+        <label>Massage<span id="star">*</span></label>
+        <input type="text" required id="message-input" name="message" data-error="This field is required">
+      </div>
+
+
+      <div class="lni-container" id="consent">
+        <input type="checkbox" required name="consent-checkbox">
+        <label>I consent to being contacted by the team<span id="star">*</span></label>
+      </div>
+
+      <button>Sumbit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+This field is required
+Please enter a valid email address
+Please select a query type
+-->
